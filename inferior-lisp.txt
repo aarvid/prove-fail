@@ -1,0 +1,41 @@
+This is SBCL 1.3.2, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* 
+; loading #P"/media/common/hack/lisp/quick/dists/quicklisp/software/slime-2.14/swank-loader.lisp"
+WARNING:
+   redefining EMACS-INSPECT (#<SB-PCL:SYSTEM-CLASS COMMON-LISP:T>) in DEFMETHOD
+;; Swank started at port: 48805.
+48805
+* WARNING: redefining SWANK::SYMBOL-INDENTATION in DEFUN
+WARNING: redefining SWANK::MACRO-INDENTATION in DEFUN
+WARNING:
+   redefining THREAD-FOR-EVALUATION (#<STRUCTURE-CLASS
+                                       SWANK::MULTITHREADED-CONNECTION>
+                                     #<SB-MOP:EQL-SPECIALIZER
+                                       :FIND-EXISTING>) in DEFMETHOD
+Heap exhausted during garbage collection: 0 bytes available, 80 requested.
+ Gen StaPg UbSta LaSta LUbSt Boxed Unboxed LB   LUB  !move  Alloc  Waste   Trig    WP  GCs Mem-age
+   0:     0     0     0     0     0     0     0     0     0        0     0 10737418    0   0  0,0000
+   1:     0     0     0     0     0     0     0     0     0        0     0 10737418    0   0  0,0000
+   2: 26266 26265     0     0 16399  1657    36    33   136 591462944 2457056  2000000    0   0  0,9851
+   3:     0     0     0     0     0     0     0     0     0        0     0  2000000    0   0  0,0000
+   4:     0     0     0     0     0     0     0     0     0        0     0  2000000    0   0  0,0000
+   5:     0     0     0     0     0     0     0     0     0        0     0  2000000    0   0  0,0000
+   6:     0     0     0     0  1611   225     0     0     0 60162048     0  2000000 1492   0  0,0000
+   Total bytes allocated    = 1069699072
+   Dynamic-space-size bytes = 1073741824
+GC control variables:
+   *GC-INHIBIT* = true
+   *GC-PENDING* = true
+   *STOP-FOR-GC-PENDING* = false
+fatal error encountered in SBCL pid 8196(tid 140737229584128):
+Heap exhausted, game over.
+
+Error opening /dev/tty: No such device or address
+Welcome to LDB, a low-level debugger for the Lisp runtime environment.
+ldb> 
