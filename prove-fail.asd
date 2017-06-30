@@ -4,12 +4,12 @@
 
 ;;;; prove-fail.asd
 
-(asdf:defsystem #:prove-fail
+(asdf:defsystem "prove-fail"
   :serial t
   :description "Shows bug in deftest of prove"
   :author "Andy Peterson <andy.arvid@gmail.com>"
   :license "BSD-2"
-  :depends-on (#:prove)
+  :depends-on ("prove")
   :components ((:file "package")
                (:file "macros")
                (:file "deftests")))
